@@ -90,8 +90,8 @@ export const getGetRisk = (tab) => {
 
   export const getAllDataInArray = data => {
     let final = [];
-    data.map(it => {
-      final.push(...it.items);
+    data.forEach(element => {
+      final.push(...element.items);
     });
     return final;
   };
@@ -134,7 +134,7 @@ export const getGetRisk = (tab) => {
    }
 
    export const clickTable = (item , data , fullData)=>{
-    let updateItem = { ...item, status: !item.status };
+    let updateItem = { ...item, status: true };
 
                 let IndexupdateItem = data.items.findIndex(x => {
                   return x.id === updateItem.id;
