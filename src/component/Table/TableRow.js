@@ -1,5 +1,5 @@
 import React from 'react';
-import { clickTable } from '../../utils/utils';
+import { clickTableCell } from '../../utils/utils';
 
 function TableRow({ data, func, fullData }) {
   return (
@@ -11,8 +11,7 @@ function TableRow({ data, func, fullData }) {
               className="btnBingo"
               style={{ backgroundColor: item.status === true ? 'green' : 'white', color: item.status === true ? '#fff' : '#000' }}
               onClick={() => {
-
-                func(clickTable(item, data, fullData));
+                func(clickTableCell(item, data, fullData));
               }}
             >
               {item.name}

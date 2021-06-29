@@ -99,8 +99,8 @@ export const ContainerWrap = styled.div`
   &.btn-risk{
   border-radius: 20px !important;
   border:1px solid #5a0505;
-  background: #FC5E5E;
-  background: radial-gradient(#FC5E5E, #c13030);
+  background:  #ffc107;
+  background: radial-gradient(#ffc107, #FFD700); 
   color:#fff;
   }
   &.btn-again,
